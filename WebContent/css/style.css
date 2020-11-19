@@ -93,6 +93,18 @@ p a:hover {
 	text-transform: uppercase;
 }
 
+a:link{
+	color: #252525;
+	display: inline-block;
+	font-family: 엄마의편지;
+	font-size: 23px;   
+	line-height: normal;
+	margin: 0;
+	padding: 0 0 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
 #header ul li a:hover{
 	color: #0ba39c;
 }
