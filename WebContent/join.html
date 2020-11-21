@@ -7,18 +7,186 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script type="text/javascript"></script>
 </head>
+<style>
+
+A:link{text-decoration:none; color: black;}
+A:visited{text-decoration:none; color: black;}
+A:active{text-decoration:none; color: black;}
+A:hover{text-decoration:none; color: black;}
+
+table{
+	border: 3px solid #31859C;
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse:collapse;
+}
+th{
+    border:1px solid #31859C;
+}
+td{
+    border:1px solid #31859C;
+    height:32px;
+}
+th,td{
+	padding:10px;
+}
+
+input{
+	padding:5px;
+}
+
+caption{
+	font-size: 30px;
+	text-align:left;
+	font-family:엄마의편지;
+	padding:10px;
+}
+
+#ok, #cancel{
+	color: #fff;
+    background-color: #31859C;
+    border-radius: 3px;
+    border:3px solid #31859C;
+}
+
+</style>
 <body>
 	<div id="header">
 		<div style=float:right id="topMenu">
 				<a href="index.html">HOME</a> |
-				<a href="#">LOGIN</a> |
-				<a href="#">JOIN</a> 
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a> 
 		</div>
 		<a href="index.html" class="logo">
 			<img width=400 height=250 src="./images/logo2.png" alt="">
 		</a>
+		
+		<ul id="navigation">
+			<li class="selected">
+				<a href="animal.html">반려동물</a>
+			</li>
+			<li>
+				<a href="notice.html">공지사항</a>
+			</li>
+			<li>
+				<a href="donate.html">후원하기</a>
+			</li>
+			<li>
+				<a href="adopt.html">입양&임시보호</a>
+			</li>
+			<li>
+				<a href="serve.html">봉사하기</a>
+			</li>
+			<li>
+				<a href="grouppurchase.html">공구하기</a>
+			</li>
+		</ul>
 	</div>
-	회원가입 페이지입니다.
+	
+	
+	<form>
+	
+		<table>
+		<caption>회원가입</caption>
+		<tr>
+			<th>이름</th>
+			<td><input type="text" name="이름"></td>
+		</tr>
+		<tr>
+			<th>아이디</th>
+			<td>
+				<input type="text" name="아이디">
+				<input type="button" value="중복확인" >
+			</td>
+		</tr>
+		<tr>
+			<th>비밀번호</th>
+			<td><input type="password" name="비밀번호"></td>
+		</tr>
+		<tr>
+			<th>비밀번호 확인</th>
+			<td><input type="password" name="비밀번호확인"></td>
+		</tr>
+		<tr>
+			<th>이메일</th>
+			<td>
+				<input type="text" name="이메일아이디"> @
+				<input type="text" name="이메일주소">
+					<select name="emailadd">
+						<option value="">선택</option>
+						<option value="naver.com">naver.com</option>
+						<option value="gmail.com">gmail.com</option>
+						<option value="daum.net">daum.net</option>
+						<option value="hanmail.net">hanmail.net</option>
+						<option value="">직접입력</option>
+					</select>
+			</td>
+		</tr>
+		<tr>
+			<th>연락처</th>
+			<td>
+				 <select name="cellphone">
+						<option value="">선택</option>
+						<option value="010">010</option>
+						<option value="011">011</option>
+						<option value="017">017</option>
+						<option value="070">070</option>
+						<option value="">직접입력</option>
+				 </select> - 
+				 <input type="text" name="핸드폰2"> - 
+				 <input type="text" name="핸드폰3">
+			</td> 
+		</tr>
+		<tr>
+			<th>우편번호</th>
+			<td>
+				<input type="text" name="우편번호">
+				<input type="button" value="주소검색" >
+		<tr>
+			<th>주소</th>
+			<td width=500 >
+				<input type="text" name="주소1" size=80><br>
+				<input type="text" name="주소2" size=40>
+			</td>
+		</tr>
+		<tr>
+			<th>정보수신 여부</th>
+			<td>
+				<input type="checkbox" name="susin1" value="이메일 수신"> 이메일 수신
+				<input type="checkbox" name="susin2" value="SNS 수신"> SNS 수신
+			</td>
+		</tr>
+		</table>
+	
+	<br><br>
+	<div style= "text-align:center">
+		<input id="ok" type="submit" value="가입" > 
+		<input id="cancel" type="button" value="취소" onclick="location.href='index.html'">
+	</div>
+	<br><br><br><br><br><br>
+	
+	<div id="footer">
+		<div>
+			<p>&copy; 2020 by 코딩하조. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/?lang=ko" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="https://ko-kr.facebook.com/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	</form>	
 
 </body>
 </html>

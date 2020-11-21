@@ -7,6 +7,54 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<script type="text/javascript"></script>
 </head>
+<style>
+A:link{text-decoration:none; color: black;}
+A:visited{text-decoration:none; color: black;}
+A:active{text-decoration:none; color: black;}
+A:hover{text-decoration:none; color: black;}
+
+#login_log{
+	font-family:Amatic;
+	font-size:40px;
+}
+
+#login{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#login_inner{
+	border: 5px solid #31859C;
+	border-style:dashed;
+	padding:70px;
+}
+#id, #password{
+	width:300px;
+	height:45px;
+	border: 1px solid #ddd;
+}
+#find_idpw a{
+	font-size:15px;
+	line-height:50px;
+	position: relative;
+	left:120px;
+}
+#login_join a{
+	float:left;
+	font-size:15px;
+	line-height:50px;
+}
+.btn_login {
+    margin: 10px 0 0;
+    width: 100%;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+}
+</style>
 <body>
 	<div id="header">
 		<div style=float:right id="topMenu">
@@ -17,8 +65,70 @@
 		<a href="index.html" class="logo">
 			<img width=400 height=250 src="./images/logo2.png" alt="">
 		</a>
+		
+		<ul id="navigation">
+			<li class="selected">
+				<a href="animal.html">반려동물</a>
+			</li>
+			<li>
+				<a href="notice.html">공지사항</a>
+			</li>
+			<li>
+				<a href="donate.html">후원하기</a>
+			</li>
+			<li>
+				<a href="adopt.html">입양&임시보호</a>
+			</li>
+			<li>
+				<a href="serve.html">봉사하기</a>
+			</li>
+			<li>
+				<a href="grouppurchase.html">공구하기</a>
+			</li>
+		</ul>
 	</div>
-	로그인 페이지입니다.
-
+	
+	<div id="login">
+		<div id="login_inner">
+			<a id=login_log>LOGIN </a><br><br>
+			<div class="login_id">
+   				<input type="text" id="id" value='' placeholder="ID">
+   			</div>
+   			<div class="login_pw">
+    			<input type="password" id="password" value='' placeholder="Password">
+    		</div>
+    		<div id="login_join">
+    		<a href="join.html">회원가입</a>
+    		</div>
+    		<div id="find_idpw">
+    			<a href="#">아이디 /</a>
+    			<a href="#">비밀번호 찾기</a>
+    		</div>
+				<button type="submit" class="btn_login">로그인</button>
+		</div>
+	</div>
+	<br><br><br><br><br><br>
+	
+	<div id="footer">
+		<div>
+			<p>&copy; 2020 by 코딩하조. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/?lang=ko" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="https://ko-kr.facebook.com/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
 </body>
 </html>
