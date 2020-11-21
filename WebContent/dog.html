@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>가낳지키</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript"></script>
+</head>
+<style>
+A:link{text-decoration:none; color: black;}
+A:visited{text-decoration:none; color: black;}
+A:active{text-decoration:none; color: black;}
+A:hover{text-decoration:none; color: black;}
+
+#ani_menu{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#ani_inner{
+	border: 5px solid #31859C;
+	border-style:dotted;
+}
+#ani_menu ul li{
+	list-style-type: none;
+	float: left;
+	padding: 20px;
+}
+#ani_menu ul li a{
+	font-size: 22px;
+	position:relative;
+	right:15px;
+	bottom:5px;
+}
+#ani_category{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	padding: 100px;
+}
+#category_inner{
+	border: 5px solid #31859C;
+	border-style:double;
+}
+#ani_category ul li{
+	padding: 20px;
+}
+#ani_category ul li a{
+	font-size: 22px;
+	position:relative;
+	right:20px;
+	bottom:5px;
+}
+#board{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#board_inner{
+	border: 2px solid #31859C;
+	position:relative;
+	bottom:390px;
+	width: 800px;
+	height: 500px;
+}
+#board a{
+	padding: 75px;
+	position:relative;
+	top: 20px;
+	font-family: 엄마의편지;
+	font-size:16px;
+}
+#write{
+	position:relative;
+	left:1100px;
+	bottom: 380px;
+	margin: 10px 0 0;
+    height: 48px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #31859C;
+    border:#31859C;
+}
+#ani_name{
+	font-size:25px;
+	position:relative;
+	left:23px;
+	top:20px;
+	font-family:엄마의편지;
+	font-weight:bold;
+}
+
+</style>
+<body>
+	<div id="header">
+		<div style=float:right id="topMenu">
+				<a href="index.html">HOME</a> |
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a> 
+		</div>
+		<a href="index.html" class="logo">
+			<img width=400 height=250 src="./images/logo2.png" alt="">
+		</a>
+		
+		<ul id="navigation">
+			<li class="selected">
+				<a href="animal.html">반려동물</a>
+			</li>
+			<li>
+				<a href="notice.html">공지사항</a>
+			</li>
+			<li>
+				<a href="donate.html">후원하기</a>
+			</li>
+			<li>
+				<a href="adopt.html">입양&임시보호</a>
+			</li>
+			<li>
+				<a href="serve.html">봉사하기</a>
+			</li>
+			<li>
+				<a href="grouppurchase.html">공구하기</a>
+			</li>
+		</ul>
+	</div>
+		
+	<div id="ani_menu">
+		<div id="ani_inner">
+			<ul class="ani">
+				<li><a href="dog.html">강아지</a></li>
+				<li><a href="#">고양이</a></li>
+				<li><a href="#">어류</a></li>
+				<li><a href="#">조류</a></li>
+				<li><a href="#">설치류</a></li>
+				<li><a href="#">파충류</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="ani_category">
+		<div id="category_inner">
+			<a id="ani_name">강아지</a><br><br>
+			<ul class="ani_cate">
+				<li><a href="#">자유게시판</a></li>
+				<li><a href="#">훈련하기</a></li>
+				<li><a href="#">공유하기</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="board">
+		<div id="board_inner">
+			<a>제목</a>
+			<a>작성자</a>
+			<a>작성일</a>
+			<a>조회수</a>
+		</div>
+	</div>
+	
+	<button type="submit" id="write" onclick="location.href='write.html'">글쓰기</button>
+		
+		
+		
+		<br><br><br><br><br><br>
+		<div id="footer">
+		<div>
+			<p>&copy; 2020 by 코딩하조. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/?lang=ko" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="https://ko-kr.facebook.com/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+
+</body>
+</html>

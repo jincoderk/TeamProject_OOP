@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>가낳지키</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript"></script>
+</head>
+<style>
+A:link{text-decoration:none; color: black;}
+A:visited{text-decoration:none; color: black;}
+A:active{text-decoration:none; color: black;}
+A:hover{text-decoration:none; color: black;}
+
+#ani_category{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	padding: 100px;
+}
+#category_inner{
+	border: 5px solid #31859C;
+	border-style:double;
+}
+#ani_category ul li{
+	padding: 20px;
+}
+#ani_category ul li a{
+	font-size: 22px;
+	position:relative;
+	right:20px;
+	bottom:5px;
+}
+#ani_name{
+	font-size:25px;
+	position:relative;
+	left:23px;
+	top:20px;
+	font-family:엄마의편지;
+	font-weight:bold;
+}
+#write_form{
+	position:relative;
+	left: 380px;
+	bottom: 450px;
+	border: 2px solid #31859C;
+	width: 800px;
+	height: 500px;
+}
+caption{
+	font-size: 30px;
+	text-align:left;
+	font-family:엄마의편지;
+	padding:10px;
+}
+th,td{
+	font-family:엄마의편지;
+	padding:10px;
+	font-size: 15px;
+}
+
+input{
+	padding:7px;
+}
+
+#wirte_submit{
+	color: #fff;
+    background-color: #31859C;
+    border-radius: 3px;
+    border:3px solid #31859C;
+}
+
+</style>
+
+<body>
+	<div id="header">
+		<div style=float:right id="topMenu">
+				<a href="index.html">HOME</a> |
+				<a href="login.html">LOGIN</a> |
+				<a href="join.html">JOIN</a> 
+		</div>
+		<a href="index.html" class="logo">
+			<img width=400 height=250 src="./images/logo2.png" alt="">
+		</a>
+		
+		<ul id="navigation">
+			<li class="selected">
+				<a href="animal.html">반려동물</a>
+			</li>
+			<li>
+				<a href="notice.html">공지사항</a>
+			</li>
+			<li>
+				<a href="donate.html">후원하기</a>
+			</li>
+			<li>
+				<a href="adopt.html">입양&임시보호</a>
+			</li>
+			<li>
+				<a href="serve.html">봉사하기</a>
+			</li>
+			<li>
+				<a href="grouppurchase.html">공구하기</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="ani_category">
+		<div id="category_inner">
+			<a id="ani_name">강아지</a><br><br>
+			<ul class="ani_cate">
+				<li><a href="#">자유게시판</a></li>
+				<li><a href="#">훈련하기</a></li>
+				<li><a href="#">공유하기</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<table id="write_form">
+		<caption> 글쓰기 </caption>
+		<td bgcolor=white>
+		<table id="write_form2">
+		<tr>
+			<th> 제목 </th>
+			<td><input type="text" name="제목" size=109></td>
+		</tr>
+		<tr>
+			<th> 내용 </th>
+			<td><textarea name = content cols=100 rows=25></textarea></td>
+		</tr>
+		</table>
+		<center><input id="wirte_submit" type = "submit" value="작성"></center>
+		</td>
+	</table>
+    
+    
+    <br><br><br><br><br><br>
+	<div id="footer">
+		<div>
+			<p>&copy; 2020 by 코딩하조. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/?lang=ko" id="twitter">twitter</a>
+				</li>
+				<li>
+					<a href="https://ko-kr.facebook.com/" id="facebook">facebook</a>
+				</li>
+				<li>
+					<a href="https://www.google.com/" id="googleplus">googleplus</a>
+				</li>
+				<li>
+					<a href="http://pinterest.com/" id="pinterest">pinterest</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+
+</body>
+</html>
